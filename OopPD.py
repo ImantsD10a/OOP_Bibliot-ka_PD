@@ -83,7 +83,7 @@ class Biblioteka:
 def galvena_izvelne():
     biblioteka = Biblioteka()  # Izveido bibliotēkas objektu
 
-    # Galvenais cikls – darbojas, kamēr lietotājs neizvēlas iziet (0)
+    # Galvenais cikls – darbojas, kamēr lietotājs neizvēlas iziet
     while True:
         print("\n BIBLIOTĒKAS SISTĒMA ")
         print("1. Pievienot grāmatu")
@@ -116,3 +116,4 @@ def galvena_izvelne():
 if __name__ == "__main__":
 
     galvena_izvelne()
+

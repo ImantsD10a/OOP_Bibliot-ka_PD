@@ -13,8 +13,7 @@ class Gramata:
         return f"{self.nosaukums} - {self.autors} ({self.gads})"
 
 
-# Klase "Biblioteka" – glabā visu grāmatu sarakstu
-# un satur metodes darbībām ar tām
+# Klase "Biblioteka" glabā visu grāmatu sarakstu un satur metodes darbībām ar tām
 
 class Biblioteka:
     def __init__(self):
@@ -48,8 +47,7 @@ class Biblioteka:
     
     def meklet_gramatu(self):
         teksts = input("Ievadi meklējamo vārdu: ").lower()
-        # Izmanto saraksta izteiksmi, lai atlasītu tikai tās grāmatas,
-        # kurās meklējamais teksts ir nosaukumā vai autorā
+        # Izmanto saraksta izteiksmi, lai atlasītu tikai tās grāmatas, kurās meklējamais teksts ir nosaukumā vai autorā
         atrastas = [g for g in self.gramatas if teksts in g.nosaukums.lower() or teksts in g.autors.lower()]
 
         if atrastas:
@@ -60,8 +58,7 @@ class Biblioteka:
             print("Nekas netika atrasts.")
 
     
-    # Metode, kas aprēķina statistiku
-    # (vidējo grāmatu izdošanas gadu)
+    # Metode, kas aprēķina statistiku (vidējo grāmatu izdošanas gadu)
     
     def statistika(self):
         if not self.gramatas:
@@ -83,7 +80,7 @@ class Biblioteka:
 def galvena_izvelne():
     biblioteka = Biblioteka()  # Izveido bibliotēkas objektu
 
-    # Galvenais cikls – darbojas, kamēr lietotājs neizvēlas iziet
+    # Galvenais cikls darbojas, kamēr lietotājs neizvēlas iziet
     while True:
         print("\n BIBLIOTĒKAS SISTĒMA ")
         print("1. Pievienot grāmatu")
@@ -116,4 +113,5 @@ def galvena_izvelne():
 if __name__ == "__main__":
 
     galvena_izvelne()
+
 

@@ -1,5 +1,5 @@
 # OOP_Bibliot-ka_PD
-Mēs izveidojām bibliotēkas programmu, kurā var pievienot grāmatas un tos meklēt.
+Mēs izveidojām bibliotēkas programmu, kurā var pievienot grāmatas un tās meklēt.
 
 Iespējamas funkcijas programmā:
 1. Pievienot grāmatu.

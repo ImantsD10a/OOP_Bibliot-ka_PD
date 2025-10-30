@@ -90,7 +90,7 @@ def galvena_izvelne():
         print("2. Parādīt grāmatas")
         print("3. Meklēt grāmatu")
         print("4. Statistika")
-        print("0. Iziet")
+        print("5. Iziet")
 
         izvele = input("Izvēlies darbību: ")
 
@@ -103,7 +103,7 @@ def galvena_izvelne():
             biblioteka.meklet_gramatu()
         elif izvele == "4":
             biblioteka.statistika()
-        elif izvele == "0":
+        elif izvele == "5":
             print("Programma beidza darbu.")
             break
         else:
@@ -114,4 +114,5 @@ def galvena_izvelne():
 # Programmas starts
 
 if __name__ == "__main__":
+
     galvena_izvelne()
